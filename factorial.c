@@ -5,7 +5,7 @@ int main()
 {
     long long int a=0;
     int c=0;
-    scanf("%d",&a);
+    scanf("%lld",&a);
     c=a;
     int b=0;
     b=a;
@@ -16,5 +16,5 @@ int main()
         a=a*b;
         counter=counter+1;
         }
-      printf("the factorial is %d",a);
+      printf("the factorial is %lld",a);
   }
