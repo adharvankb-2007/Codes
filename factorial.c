@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a=0;
+    int c=0;
+    scanf("%d %d",&a,&c);
+    int b=0;
+    b=a;
+    int counter=1;
+    while (counter<=(c-1))
+       {
+        b=b-1;
+        a=a*b;
+        counter=counter+1;
+        }
+      printf("the factorial is %d",a);
+  }
