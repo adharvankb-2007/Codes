@@ -1,4 +1,5 @@
 //in order to obtain the value of the factorial of a number just enter the desired number in the input dialog box of the IDE.
+//the program to obtain the value of the factorial by just using while iteration control statement(also counter controlled iteration).
 #include <stdio.h>
 int main()
 {
