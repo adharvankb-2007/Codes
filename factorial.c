@@ -3,7 +3,7 @@
 #include <stdio.h>
 int main()
 {
-    int a=0;
+    long long int a=0;
     int c=0;
     scanf("%d",&a);
     c=a;
