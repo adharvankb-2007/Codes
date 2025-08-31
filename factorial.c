@@ -1,3 +1,4 @@
+//in order to obtain the value of the factorial of a number just enter the desired number twice in the input dialog box in the IDE
 #include <stdio.h>
 int main()
 {
