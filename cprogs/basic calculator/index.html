@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        input { width: 300px; font-size: 20px; }
+        button { font-size: 18px; margin: 3px; }
+    </style>
+</head>
+<body>
+
+<h2>Scientific Calculator</h2>
+
+<input id="expression" placeholder="e.g. sin(pi/2)"><br><br>
+<button onclick="calculate()">Calculate</button>
+
+<h3 id="result"></h3>
+
+<script>
+async function calculate() {
+    const expr = document.getElementById("expression").value;
+
+    const response = await fetch("http://YOUR_IP:5000/calculate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ expression: expr })
+    });
+
+    const data = await response.json();
+    document.getElementById("result").innerText =
+        data.result !== undefined ? "Result: " + data.result : "Error: " + data.error;
+}
+</script>
+
+</body>
+</html>

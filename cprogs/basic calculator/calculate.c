@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
+
 void calculate(void) {
     char s[1000];
 
