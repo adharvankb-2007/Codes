@@ -164,7 +164,6 @@ int main(void){
   // Main input handler to serve requests.
   while(getline(&inputLine, &length, stdin) != -1){
     // printf("%s\n",inputLine);
-    /*******************NEED TO CHECK BELOW THIS LINE******************** */
     sscanf(inputLine,"%c %s",&choice, numberPlate);
     numberPlate[5] = '\0';
     // printf("%c %sSTARK\n",choice,numberPlate);
